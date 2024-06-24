@@ -1,0 +1,7 @@
+<div class="d-flex justify-content-center mt-3 col-12">
+  <ul class="bullet" >
+    <% @articles.each do |article| %>
+      <li>  <%= link_to article.title, article_path(article), class:"title" %> </li>
+    <% end %>
+  </ul>
+</div>
